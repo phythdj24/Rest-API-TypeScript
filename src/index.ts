@@ -1,7 +1,7 @@
-// let age : number = 20
+let age : number = 20
 
-// if (age < 50) 
-//     age += 10;
+if (age < 50) 
+    age += 10;
     
 function sum(a: number,b: number):number{
     return a+b

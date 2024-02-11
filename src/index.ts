@@ -14,7 +14,7 @@ console.log(sum(5,10));
 let Myname = true;
 let Isdone: any = true;
 
-let da = true;
+let isdaone = true;
 let Number = any = true;
 
 Isdone = "Yes"

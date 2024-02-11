@@ -15,6 +15,6 @@ let Myname = true;
 let Isdone: any = true;
 
 let da = true;
-let Number: any = true;
+let Number = any = true;
 
 Isdone = "Yes"

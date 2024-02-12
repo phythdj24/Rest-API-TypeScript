@@ -1,22 +1,52 @@
-let age : number = 20
+// let age : number = 20
 
-if (age < 50) 
-    age += 10;
+// if (age < 50) 
+//     age += 10;
     
-function sum(a: number,b: number):number{
-    return a+b
+// function sum(a: number,b: number):number{
+//     return a+b
+// }
+
+
+// console.log(sum(5,10));
+
+
+// let Myname = true;
+// let Isdone: any = true;
+
+// Isdone = "Yes"
+
+
+//Interfaces
+
+interface Transition{
+    payerAccountNumber: number;
+    payeeAccountNumber: number
+
+}
+
+interface BankAccount{
+    accountNumber: number;
+    accountHolder: string;
+    balance: number;
+    isActive: boolean;
+    transaction: Transition[]
 }
 
 
-console.log(sum(5,10));
+const transaction1 : Transition ={
+    payeeAccountNumber: 123,
+    payerAccountNumber:232,
+};
 
-
-let Myname = true;
-let Isdone: any = true;
-
-let isdaone = true;
-let Number = any = true;
-
-Isdone = "Yes"
-
-Isdone = "Yes"
+const transaction2 : Transition ={
+    payeeAccountNumber: 444,
+    payerAccountNumber:232,
+};
+const bankAccount: BankAccount = {
+     accountNumber: 123,
+     accountHolder: "John doe",
+     balance: 2211,
+     isActive: true,
+     transaction: [transaction1]
+}

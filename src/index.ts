@@ -65,10 +65,10 @@ interface EBook{
     format: string;
 }
 
-// const book : EBook ={
-//     name:'Atomic Habit',
-//     price: 120,
-//     fileSize:300,
-//     format: 'pdf'
+const book : EBook ={
+    name:'Atomic Habit',
+    price: 120,
+    fileSize:300,
+    format: 'pdf'
     
-// }
+}

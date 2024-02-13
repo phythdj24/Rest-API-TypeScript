@@ -54,21 +54,41 @@
 
 //extend
 
-interface Book{
-    name: string;
-    price: number;
-}
-interface EBook{
-    name: string;
-    price: number;
-    fileSize: number;
-    format: string;
-}
+// interface Book{
+//     name: string;
+//     price: number;
+// }
+// interface EBook{
+//     name: string;
+//     price: number;
+//     fileSize: number;
+//     format: string;
+// }
 
-const book : EBook ={
-    name:'Atomic Habit',
-    price: 120,
-    fileSize:300,
-    format: 'pdf'
+// const book : EBook ={
+//     name:'Atomic Habit',
+//     price: 120,
+//     fileSize:300,
+//     format: 'pdf'
     
-}
+// }
+
+// interface book{
+//     name:string;
+//     price: string;
+// }
+
+// interface book{
+//     size: number
+// }
+
+// const Book:book ={
+//     name: "Atomic habit",
+//     price:'12',
+//     size: 12
+// }
+
+// type Book = {
+//     name:string;
+//     price: number;
+// }

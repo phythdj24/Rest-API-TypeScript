@@ -92,3 +92,23 @@
 //     name:string;
 //     price: number;
 // }
+
+
+//UNIONS
+
+type ID = number | string;
+
+const printId = (id: ID)=>{
+    if(typeof id === 'string')
+    {
+        console.log(id.toUpperCase());
+      
+    }
+        console.log(id);
+        
+    
+
+      
+}
+
+printId('hello tsandjs');

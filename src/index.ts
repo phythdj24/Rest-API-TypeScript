@@ -33,13 +33,13 @@ const user = (age: number)=>
       
 }
 
-// let x = user(13)
+let x = user(13)
 
-// const runafter = (fn: ()=> void)=>{
-//    setTimeout(fn , 1000);
-// }
+const runafter = (fn: ()=> void)=>{
+   setTimeout(fn , 1000);
+}
 
-// runafter(function(){
-//     console.log("Hi There");
-//     return 1;
-// })
+runafter(function(){
+    console.log("Hi There");
+    return 1;
+})

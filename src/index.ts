@@ -7,39 +7,61 @@
 // const form = document.querySelector("#new-task")
 // const input = document.querySelector("#new-task-title")
 
-const Greets = (firstname: string)=>{
+// const Greets = (firstname: string)=>{
        
-    firstname = "Sanagam"
-    console.log("Hello", firstname);
+//     firstname = "Sanagam"
+//     console.log("Hello", firstname);
     
-}
+// }
 
-const sum = (a:number , b:number): number=>{
-       return a + b
-}
+// const sum = (a:number , b:number): number=>{
+//        return a + b
+// }
 
-console.log(sum(12,12));
+// console.log(sum(12,12));
 
 
-const user = (age: number)=>
-{
-      if (age > 18) {
-         return true;
+// const user = (age: number)=>
+// {
+//       if (age > 18) {
+//          return true;
          
-      }
-       else{
-        return false;
-       };
+//       }
+//        else{
+//         return false;
+//        };
       
+// }
+
+// let x = user(13)
+
+// const runafter = (fn: ()=> void)=>{
+//    setTimeout(fn , 1000);
+// }
+
+// runafter(function(){
+//     console.log("Hi There");
+//     return 1;
+// })
+
+interface User{
+    firstname: string;
+    lastname: string;
+    age:number;
+    email?: string;
 }
 
-let x = user(13)
-
-const runafter = (fn: ()=> void)=>{
-   setTimeout(fn , 1000);
+const Isleagel = (user: User)=>{
+   if (user.age > 19) {
+    return true
+   }else {
+    return false
+   }
 }
 
-runafter(function(){
-    console.log("Hi There");
-    return 1;
+Isleagel({
+    firstname: "sangam",
+    lastname:"dalal",
+    age: 20,
+    
 })

@@ -44,24 +44,45 @@
 //     return 1;
 // })
 
-interface User{
-    firstname: string;
-    lastname: string;
-    age:number;
-    email?: string;
-}
+// interface User{
+//     firstname: string;
+//     lastname: string;
+//     age:number;
+//     email?: string;
+// }
 
-const Isleagel = (user: User)=>{
-   if (user.age > 19) {
-    return true
-   }else {
-    return false
-   }
-}
+// const Isleagel = (user: User)=>{
+//    if (user.age > 19) {
+//     return true
+//    }else {
+//     return false
+//    }
+// }
 
-Isleagel({
-    firstname: "sangam",
-    lastname:"dalal",
-    age: 20,
+// Isleagel({
+//     firstname: "sangam",
+//     lastname:"dalal",
+//     age: 20,
     
-})
+// })
+// console.log(Isleagel());
+
+
+interface Person {
+    name:string;
+    age:number;
+    greet(phrase: string): void;
+}
+
+class Employee implements Person {
+    name: string;
+    age: number;
+    constructor(n: string, a: number){
+        this.name = n;
+        this.age = a;
+    }
+    greet(phrase: string): void {
+        console.log(`${phrase} ${this.name}`);
+        
+    }
+}

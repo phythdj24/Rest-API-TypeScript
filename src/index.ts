@@ -116,7 +116,7 @@ function Dosomething(keypressed:Directions){
 }
 
 
-// Dosomething(Directions.Right)
+Dosomething(Directions.Right)
 
 type Input = number | string
 function Firstel (arr : Input[]){

@@ -20,6 +20,18 @@ const sum = (a:number , b:number): number=>{
 
 console.log(sum(12,12));
 
+const user = (age: number)=>
+{
+      if (age > 18) {
+         return true;
+         
+      }
+       else{
+        return false;
+       };
+      
+}
+
 
 
 

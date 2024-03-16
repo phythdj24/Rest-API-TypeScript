@@ -33,6 +33,26 @@ const user = (age: number)=>
 }
 
 
+let x = user(13)
+
+const runafter = (fn: ()=> void)=>{
+   setTimeout(fn , 1000);
+}
+
+runafter(function(){
+    console.log("Hi There");
+    return 1;
+})
+
+interface User{
+    firstname: string;
+    lastname: string;
+    age:number;
+    email?: string;
+}
+
+
+
 
 
 

@@ -52,6 +52,31 @@ interface User{
 }
 
 
+const Isleagel = (user: User)=>{
+   if (user.age > 19) {
+    return true
+   }else {
+    return false
+   }
+}
+
+Isleagel({
+    firstname: "sangam",
+    lastname:"dalal",
+    age: 20,
+    
+})
+console.log(Isleagel());
+
+
+interface Person {
+    name:string;
+    age:number;
+    greet(phrase: string): void;
+}
+
+
+
 
 
 

@@ -131,7 +131,7 @@ function Firstel (arr : Input[]){
 NewUpdate(Directions.Right)
 
 type Input = number | string
-function Firstel (arr : Input[]){
+function ThirdRel (arr : Input[]){
        return arr[0]
 }
 NewUpdate(Directions.Right)

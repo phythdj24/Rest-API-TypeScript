@@ -131,13 +131,13 @@ function Firstel (arr : Input[]){
 NewUpdate(Directions.Right)
 
 type Input = number | string
-function ThirdRel (arr : Input[]){
+function SecondRel (arr : Input[]){
        return arr[0]
 }
-NewUpdate(Directions.Right)
+Event(Directions.Right)
 
 type Input = number | string
-function SeconRel (arr : Input[]){
+function ThirdRel (arr : Input[]){
        return arr[0]
 }
 

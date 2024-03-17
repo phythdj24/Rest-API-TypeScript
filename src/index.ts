@@ -134,7 +134,7 @@ type Input = number | string
 function SecondRel (arr : Input[]){
        return arr[0]
 }
-Event(Directions.Right)
+NewEv(Directions.Right)
 
 type Input = number | string
 function ThirdRel (arr : Input[]){

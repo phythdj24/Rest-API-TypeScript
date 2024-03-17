@@ -128,6 +128,12 @@ type Input = number | string
 function Firstel (arr : Input[]){
        return arr[0]
 }
+NewUpdate(Directions.Right)
+
+type Input = number | string
+function Firstel (arr : Input[]){
+       return arr[0]
+}
 
 
 

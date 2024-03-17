@@ -66,7 +66,7 @@ Isleagel({
     age: 20,
     
 })
-console.log(Isleagel());
+
 
 
 interface Person {
@@ -88,20 +88,20 @@ class Employee implements Person {
     }
 }
 
-interface Person {
-    name:string;
-    age:number;
-}
+// interface Person {
+//     name:string;
+//     age:number;
+// }
 
-type user = {
-    name:string;
-    age:number;
-}
+// type user = {
+//     name:string;
+//     age:number;
+// }
 
-function UserId (id:string | number){
-     console.log(`ID: ${id}`);
+// function UserId (id:string | number){
+//      console.log(`ID: ${id}`);
      
-}
+// }
 
 
 

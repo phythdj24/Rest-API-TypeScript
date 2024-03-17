@@ -115,31 +115,6 @@ enum Directions {
     Left,
     Right
 }
-function Dosomething(keypressed:Directions){
-    if(keypressed == Directions.Up){
-
-    }
-}
-
-
-Dosomething(Directions.Right)
-
-type Input = number | string
-function Firstel (arr : Input[]){
-       return arr[0]
-}
-NewUpdate(Directions.Right)
-
-type Input = number | string
-function SecondRel (arr : Input[]){
-       return arr[0]
-}
-NewEv(Directions.Right)
-
-type Input = number | string
-function ThirdRel (arr : Input[]){
-       return arr[0]
-}
 
 
 

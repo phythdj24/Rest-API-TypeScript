@@ -1,7 +1,7 @@
 import { UserModel } from "../models/userSchema"
 
 
-export const getUser = ()=> UserModel.find();
+export const getUsers = ()=> UserModel.find();
 
 export const getuserByEmail = (email:string) => UserModel.findOne({email});
 

@@ -1,120 +1,37 @@
-// import {v4 as uuidV4} from 'uuid'
-
-// console.log(uuidV4());
-
-
-const list = document.querySelector<HTMLUListElement>("#list")
-const form = document.querySelector("#new-task")
-const input = document.querySelector("#new-task-title")
-
-const Greets = (firstname: string)=>{
-       
-    firstname = "Sanagam"
-    console.log("Hello", firstname);
-    
-}
-
-const sum = (a:number , b:number): number=>{
-       return a + b
-}
-
-console.log(sum(12,12));
-
-const user = (age: number)=>
-{
-      if (age > 18) {
-         return true;
-         
-      }
-       else{
-        return false;
-       };
-      
-}
+import express from 'express'
+import http from 'http'
+import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser'
+import compression from "compression"
+import cors from 'cors'
+import mongoose from 'mongoose'
+import router from './router/index'
 
 
-let x = user(13)
+const app = express()
 
-const runafter = (fn: ()=> void)=>{
-   setTimeout(fn , 1000);
-}
+app.use(cors({
+    credentials:true,
+}))
 
-runafter(function(){
-    console.log("Hi There");
-    return 1;
-})
+app.use(compression())
 
-interface User{
-    firstname: string;
-    lastname: string;
-    age:number;
-    email?: string;
-}
+app.use(cookieParser())
+app.use(bodyParser.json())
 
+const server = http.createServer(app)
 
-const Isleagel = (user: User)=>{
-   if (user.age > 19) {
-    return true
-   }else {
-    return false
-   }
-}
-
-Isleagel({
-    firstname: "sangam",
-    lastname:"dalal",
-    age: 20,
+server.listen(8000, ()=>{
+    console.log(`server is running on PORT 8000`);
     
 })
 
 
+const MONGO_URL='mongodb://127.0.0.1:27017/restapi'
 
-interface Person {
-    name:string;
-    age:number;
-    greet(phrase: string): void;
-}
+mongoose.Promise = Promise;
+mongoose.connect(MONGO_URL);
+mongoose.connection.on('error',(error: Error)=> console.log(error)
+)
 
-class Employee implements Person {
-    name: string;
-    age: number;
-    constructor(n: string, a: number){
-        this.name = n;
-        this.age = a;
-    }
-    greet(phrase: string): void {
-        console.log(`${phrase} ${this.name}`);
-        
-    }
-}
-
-// interface Person {
-//     name:string;
-//     age:number;
-// }
-
-// type user = {
-//     name:string;
-//     age:number;
-// }
-
-// function UserId (id:string | number){
-//      console.log(`ID: ${id}`);
-     
-// }
-
-
-
-
-
-
-
-enum Directions {
-    Up,
-    down,
-    Left,
-    Right
-}
-
-
-
+app.use('/', router())
